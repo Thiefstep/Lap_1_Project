@@ -23,5 +23,16 @@ app.get("/", (req, res) => {
     res.json(facts[randInx]);
   });
 
+  app.get("/facts/:id", (req, res) => {
+    const idx = req.params.id;
+  
+    const fact = facts[idx - 1];
+  
+    if (!fact) {
+      res.status(404).json({ message: `Quote with id ${idx} not found` });
+    } else {
+      res.send(fact);
+    }
+  });
 
 module.exports = app
