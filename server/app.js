@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
     const fact = facts[idx - 1];
   
     if (!fact) {
-      res.status(404).json({ message: `Quote with id ${idx} not found` });
+      res.status(404).json({ message: `Fact with id ${idx} not found` });
     } else {
       res.send(fact);
     }
