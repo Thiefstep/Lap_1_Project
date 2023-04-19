@@ -1,6 +1,6 @@
-const randomiseButton = document.querySelector("#btn-randomise");
+// const randomiseButton = document.querySelector("#btn-randomise");
 
-randomiseButton.addEventListener("click", displayFact);
+// randomiseButton.addEventListener("click", displayFact);
 
 async function displayFact() {
     const res = await fetch("http://localhost:3000/facts/random");
@@ -15,3 +15,4 @@ async function displayFact() {
   }
   //This shows a quote as soon as the page loads
   displayFact();
+  setInterval(displayFact, 5000);
