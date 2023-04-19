@@ -1,4 +1,38 @@
-button {
+main {
+margin: 10%;
+}
+
+body {
+  background: #5F2165;
+}
+
+#box1{
+  padding: 10%;
+  width: 60%;
+  height: 50%;
+  float: left;
+  box-sizing: border-box;
+  border: 1px solid black;
+  text-align: center;
+  background: #0807086a;
+  border-radius: 10%;
+ 
+}
+
+#box2{
+  padding: 5%;
+  width: 40%;
+  height: 700px;
+  float: right;
+  box-sizing: border-box;
+  border: 1px solid black;
+  text-align: center;
+  background: #0807086a;
+  border-radius: 10%;
+}
+
+
+  button {
     background-color: #80C825;
     color: white;padding: 14px 20px;
     margin: 8px 0;
@@ -6,3 +40,20 @@ button {
     cursor: pointer;
     width: 50%;
   }
+
+
+
+    background: rgb(1, 0, 0);
+    padding: 0.5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    margin-top: 1%;
+    font-family: lobster;
+    color: #1c1cd9;
+    font-size: 50px;
+    display: inline-block;
+    border: solid;
+    border-radius: 10%;
+    border-width: 4px;
+    border-color: rgb(182, 36, 60);
