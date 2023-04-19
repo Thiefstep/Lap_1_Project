@@ -6,6 +6,10 @@ body {
   background: #5F2165;
 }
 
+#container {
+  flex-grow: 1;
+  padding: 1rem;
+}
 #box1{
   padding: 10%;
   width: 60%;

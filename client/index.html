@@ -6,19 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./home.css"> </link>
+    <script defer src="./index.js"></script>
     <title> SNAKEspeare</title>
 </head>
 <body>
 
     <div1 id="box1">
             <h1>Snakespeare</h1>
+            <div id="container">
+              <h3 id="text"></h3>
+              <em id="play"></em>
+            </div>
+            <button id="btn-randomise">Explore</button>
             <br>
             
             <form id="create-form">
-                <label for="name">Enter your name before you play!</label>
+                <label for="name">Enter your name before you play:</label>
                 <input type="text" id="name" name="name" placeholder="Enter name..." />
                 <br><br>
-                <label for="schoolName">Don't forget the name of your school.</label>
+                <label for="schoolName">Don't forget the name of your school:
+                </label>
                 <input type="text" id= "schoolName" name="schoolName" placeholder="Enter School Name..."/>
                 <br><br>
                 <input type="submit" value="Submit"/>
