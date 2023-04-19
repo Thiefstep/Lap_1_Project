@@ -18,5 +18,10 @@ app.get("/", (req, res) => {
     res.json(facts);
   });
 
+  app.get("/facts/random", (req, res) => {
+    const randInx = Math.floor(Math.random() * facts.length);
+    res.json(facts[randInx]);
+  });
+
 
 module.exports = app
