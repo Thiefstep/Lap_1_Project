@@ -55,3 +55,31 @@ function moveSnake() {
         snake.pop();
     }
 }
+
+function checkCollision() {
+    const head = snake[0];
+    if (head.x < 0 || head.x >= canvas.width || head.y < 0 || head.y >= canvas.height || snake.slice(1).some((segment) => segment.x === head.x && segment.y === head.y)) {
+        resetGame();
+    }
+}
+
+function drawGame() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawSnake();
+    drawFood();
+    updateScore();
+}
+
+function drawSnake() {
+    ctx.fillStyle = "lime";
+    snake.forEach((segment) => {
+        ctx.fillRect(segment.x, segment.y, 20, 20);
+    });
+}
+
+function drawFood() {
+    food.forEach((foodItem) => {
+        ctx.fillStyle = foodItem.color;
+        ctx.fillRect(foodItem.x, foodItem.y, 20, 20);
+    });
+}
