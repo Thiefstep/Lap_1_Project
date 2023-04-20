@@ -4,7 +4,7 @@
 <br>
 This project is a game of snakes but with a twist. Use your knowledge of literacy to get the food and not the poison.
 <br>
-**GOOD LUCK!!!!!**
+** GOOD LUCK!!!!! **
 
 Built this game to help the education of non STEM subjects. This is an interractive way to introduce Literacy.
 
