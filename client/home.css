@@ -1,5 +1,5 @@
 main {
-margin: 10%;
+margin: 5%;
 }
 
 body {
@@ -11,9 +11,12 @@ body {
   padding: 1rem;
 }
 #box1{
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 10%;
-  width: 60%;
-  height: 50%;
   float: left;
   box-sizing: border-box;
   border: 1px solid black;
@@ -24,9 +27,13 @@ body {
 }
 
 #box2{
-  padding: 5%;
-  width: 40%;
-  height: 700px;
+  width: 37%;
+  height: 443px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
   float: right;
   box-sizing: border-box;
   border: 1px solid black;
@@ -35,14 +42,41 @@ body {
   border-radius: 10%;
 }
 
+h2 {
+  padding: 2%;
+  margin: 0%;
+  margin-left: 15%;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid black;
+  text-align: center;
+  background: #0807086a;
+  border-radius: 10%;
+}
+
+#box3 {
+  padding: 3%;
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  text-align: center;
+  background: #0807086a;
+  border-radius: 10%;
+}
 
   button {
     background-color: #80C825;
     color: white;padding: 14px 20px;
     margin: 8px 0;
-    border: none;
+    border: inline-block;
     cursor: pointer;
-    width: 50%;
+    width: 70%;
   }
 
 
