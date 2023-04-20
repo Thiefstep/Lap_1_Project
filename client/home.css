@@ -2,6 +2,10 @@ main {
 margin: 5%;
 }
 
+#script {
+  color: white;
+}
+
 body {
   background-image: url("./images/Screenshot\ 2023-04-20\ at\ 14.06.09.png");
   background-position: top-left;
@@ -29,9 +33,17 @@ body {
 }
 
 h1 {
+  padding: 2%;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid rgb(27, 182, 32);
+  text-align: center;
+  background: #08070879;
+  border-radius: 10%;
   font-family: 'Abril Fatface', cursive;
   color: white;
-  border: solid, rgb(27, 182, 32);
+  font-family: 'Abril Fatface', cursive;
+  color: white;
 }
 
 #form {
