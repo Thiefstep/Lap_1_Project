@@ -83,3 +83,35 @@ function drawFood() {
         ctx.fillRect(foodItem.x, foodItem.y, 20, 20);
     });
 }
+
+function createFood() {
+    const x1 = Math.floor(Math.random() * (canvas.width / 20)) * 20;
+    const y1 = Math.floor(Math.random() * (canvas.height / 20)) * 20;
+    const x2 = Math.floor(Math.random() * (canvas.width / 20)) * 20;
+    const y2 = Math.floor(Math.random() * (canvas.height / 20)) * 20;
+
+    const correctColor = yellowEl.textContent === questions.find((q) => q.correct === yellowEl.textContent || q.correct === redEl.textContent).correct ? "yellow" : "red";
+    const incorrectColor = correctColor === "yellow" ? "red" : "yellow";
+
+    food = [
+        { x: x1, y: y1, color: correctColor },
+        { x: x2, y: y2, color: incorrectColor },
+    ];
+}
+
+
+function resetGame() {
+    clearInterval(gameInterval);
+    snake = [{ x: 300, y: 300 }];
+    direction = { x: 0, y: 0 };
+    score = 0;
+    gameInterval = setInterval(update, 100);
+}
+
+function updateScore() {
+    scoreEl.textContent = `Score: ${score}`;
+    highscoreEl.textContent = `Highscore: ${highscore}`;
+    if (score > highscore) {
+        highscore = score;
+    }
+}
