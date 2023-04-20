@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <main>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="./index.css"> </link>
+    <title>SnakeSpeare</title>
+    <link rel="stylesheet" href="index.css">
     <script defer src="./index.js"></script>
-    <title> SNAKEspeare</title>
 </head>
-
 <body>
-
-    <div1 id="box1">
-            <h1>SnakeSpeare</h1>
+    <nav>
+        <a href="index.html" id="logo">Snake<span id="snake-highlight">Spea</span>re<span id="dot">.</span></a>
+    </nav>
+    <div id="main-container">
+        <div id="box1">
+            <h1>SnakeSpeare<span>.</span></h1>
             <div id="container">
               <h3 id="text"></h3>
               <em id="play"></em>
             </div>
-            <!-- <button id="btn-randomise">Explore</button> -->
-            <br>
-            
             <form id="create-form">
                 <label for="name">Enter your name before you play:</label>
                 <input type="text" id="name" name="name" placeholder="Enter name..." />
                 <br><br>
-                <label for="schoolName">Don't forget the name of your school:
-                </label>
-                <input type="text" id= "schoolName" name="schoolName" placeholder="Enter School Name..."/>
+                <label for="schoolName">Don't forget the name of your school:</label>
+                <input type="text" id="schoolName" name="schoolName" placeholder="Enter School Name..."/>
                 <br><br>
-                <input type="submit" value="Submit"/>
-              </form>
-            
-              <a href="game.html">
+                <input type="submit" value="SUBMIT"/>
+            </form>
+            <a href="game.html">
                 <button class="block"><b>PLAY GAME</b></button>
-              </a>        
-        
-    </div1>
+            </a>
+        </div>
+        <div id="box2">
+            <h2><u>LEADERBOARD</u><span>.</span></h2>
+            <ul id="leaderboard">
 
-    <h2>LEADERBOARD</h2> 
+            </ul>
+        </div>
+    </div>
+    <div id="box3">
+        <h3>HOW TO PLAY<span>!</span></h3>
+        <p> <span>Instructions:</span> How to Play SnakeSpeare. <br><br>
 
-    <div2 id="box2">
-       
-    </div2>
-    <div3 id="box3">
-      <h3>How to play!</h3>
-  </div3>
-  <script>
-    const form = document.getElementById("create-form");
-    const box2 = document.getElementById("box2");
-    form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        const name = document.getElementById("name").value;
-        box2.textContent = ">" + name;
-    });
-  </script>
- 
+            <span>Starting the game:</span> Visit the game's homepage and enter your name in the "Enter your name" field. Click "Start" to begin playing. <br><br>
+            
+            <span>Objective:</span> The main goal of the game is to [describe the primary objective, e.g., score as many points as possible, solve puzzles, reach the finish line, etc.]. <br><br>
+            
+            <span>Controls:</span> Use arrow keys to move <br><br>
+            
+            <span>Scoring:</span> [Describe how players can earn points or advance in the game, e.g., by collecting items, solving puzzles, or defeating enemies]. <br><br>
+            
+            <span>Leaderboard:</span> At the end of the game, your score will be submitted to the leaderboard. Compete with your friends and other players to see who can achieve the highest score! <br><br>
+        </p>
+    </div>
+    <script>        
+        const form = document.getElementById("create-form");
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            
+            // Get the leaderboard element
+            const leaderboard = document.getElementById("leaderboard");
+    
+            // Create a new list item
+            const listItem = document.createElement("li");
+            listItem.textContent = name;
+    
+            // Append the new list item to the leaderboard
+            leaderboard.appendChild(listItem);
+        });
+    </script>
+    
+    
 </body>
-</main>
 </html>
-
-
 
 
     
