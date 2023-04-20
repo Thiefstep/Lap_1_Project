@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnakeSpeare</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" id="logo">Snake<span id="snake-highlight">Spea</span>re<span id="dot">.</span></a>
+    </nav>
+    <div id="question-container">
+        <span id="question"></span>
+        <div id="answer-container">
+            <span id="yellow"></span>
+            <span id="red"></span>
+        </div>
+    </div>
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+    <div id="score-container">
+        <span id="score">Score: 0</span>
+        <span id="highscore">Highscore: 0</span>
+    </div>
+    <script src="questions.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
