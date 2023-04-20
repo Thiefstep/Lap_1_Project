@@ -1,32 +1,46 @@
 const facts = [
     {
-    text: "English originates from North West Germany and the Netherlands. English has its origins in Old High German, Old Norse, and Anglo Norman. Modern English started being used in the 14th century and the closest languages to English are Dutch and West Flemish."
+        text: "To be or not to be, that is the question.",
+        play: "Hamlet, Act III, Scene I"
     },
     {
-    text: "English is spoken by 952 million people around the world. 339 million people speak English as a first language, and 603 million speak it as a second language. It is the official language in 67 countries and 27 non-sovereign countries such as Hong Kong."
+        text: "All the world's stage, and all the men and women merely players",
+        play: "As You Like It, Act II, Scene VII"
     },
     {
-    text: "Most English grammar and spelling follow standardised rules. Dr.Johnson’s Dictionary of 1755 sets out the rules of English grammar and spelling. This dictionary was the first to comprehensively document the English lexicon and is one of the most famous dictionaries in history, taking over 8 years to compile."
+        text: "A horse! A horse! My Kingdom for a horse!",
+        play: "Richard III, Act V, Scene IV"
     },
     {
-    text: "The most used adjective in the English language is ‘good’. The most common noun in the English Language is ‘time’, and the most mispronounced (and often misspelt) word in the English language is ‘Pronunciation’."
+        text: "We are such stuff as dreams are made on.",
+        play: "The Tempest, Act IV, Scene I"
     },
     {
-    text: "English is the language of the sky. All pilots must identify themselves in English during international flights. Likewise, all air traffic controllers at international airports must be able to communicate with the pilots in English."
+        text: "The course of true love never did run smooth.",
+        play: "A Midsummer Night's Dream, Act I, Scene I"
     },
     {
-    text: "The longest word in the English language contains 45 letters. The forty-five letter word, ‘pneumonoultramicroscopicsilicovolcanoconiosis’, refers to a lung disease caused by inhalation of fine silca dust. The second longest word in the English language dictionary is ‘Hippopotomonstrosesquippedaliophobia’, that ironically means the fear of long words."
+        text: "If music be the food of love, play on.",
+        play: "Twelfth Night, Act I, Scene I"
     },
     {
-    text: "William Shakespeare had a great influence on the English language. William Shakespeare was an English poet, playwright, and actor. Above all, he introduced thousands of words and phrases into the English language."
+        text: "Friends, Romans, countrymen, lend me your ears.",
+        play: "Julius Caesar, Act III, Scene II"
     },
     {
-    text: "Some English words are formed by combining two words together. For instance, ‘Hangry’ is a word in the English dictionary that combines two words together. The word combines ‘hungry’ and ‘angry’, describing the feeling of being irritated as a result of hunger. Hangry was added to the Oxford English Dictionary in January 2018."
+        text: "Once more unto the breach, dear friends, once more.",
+        play: "Henry V, Act III, Scene I"
+    },
+    {
+        text: "To thine own self be true.",
+        play: "Hamlet, Act I, Scene III"
+    },
+    {
+        text: "Parting is such sweet sorrow.",
+        play: "Romeo and Juliet, Act II, Scene II"
     },
 
 ]
 
 
 module.exports = facts;
-
-
