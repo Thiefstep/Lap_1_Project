@@ -1,6 +1,6 @@
 # Snakespeare
 
-** WELCOME TO SNAKESPEARE **
+**WELCOME TO SNAKESPEARE**
 <br>
 This project is a game of snakes but with a twist. Use your knowledge of literacy to get the food and not the poison.
 <br>
