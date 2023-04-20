@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="./home.css"> </link>
     <script defer src="./index.js"></script>
     <title> SNAKEspeare</title>
@@ -12,7 +17,7 @@
 <body>
 
     <div1 id="box1">
-            <h1>Snakespeare</h1>
+            <h1>SnakeSpeare</h1>
             <div id="container">
               <h3 id="text"></h3>
               <em id="play"></em>
@@ -51,7 +56,7 @@
     form.addEventListener("submit", (event) => {
         event.preventDefault();
         const name = document.getElementById("name").value;
-        box2.insertAdjacentHTML('beforeend', '<div>' + name + '</div>');
+        box2.textContent = ">" + name;
     });
 </script>
  
