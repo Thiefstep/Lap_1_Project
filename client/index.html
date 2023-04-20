@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <main>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./home.css"> </link>
+    <script defer src="./index.js"></script>
+    <title> SNAKEspeare</title>
+</head>
+<body>
+
+    <div1 id="box1">
+            <h1>SnakeSpeare</h1>
+            <div id="container">
+              <h3 id="text"></h3>
+              <em id="play"></em>
+            </div>
+            <!-- <button id="btn-randomise">Explore</button> -->
+            <br>
+            
+            <form id="create-form">
+                <label for="name">Enter your name before you play:</label>
+                <input type="text" id="name" name="name" placeholder="Enter name..." />
+                <br><br>
+                <label for="schoolName">Don't forget the name of your school:
+                </label>
+                <input type="text" id= "schoolName" name="schoolName" placeholder="Enter School Name..."/>
+                <br><br>
+                <input type="submit" value="Submit"/>
+              </form>
+            
+              <a href="game.html">
+                <button class="block"><b>PLAY GAME</b></button>
+              </a>        
+        
+    </div1>
+
+    <h2>LEADERBOARD</h2> 
+
+    <div2 id="box2">
+       
+    </div2>
+    <div3 id="box3">
+      <h3>How to play!</h3>
+  </div3>
+  <script>
+    const form = document.getElementById("create-form");
+    const box2 = document.getElementById("box2");
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        box2.textContent = ">" + name;
+    });
+</script>
+ 
+</body>
+</main>
+</html>
+
+
+
+
+    
+
+    
