@@ -40,7 +40,18 @@
     <div2 id="box2">
        <h2>LEADERBOARD</h2> 
     </div2>
-
+    <div id="box3">
+      <h2>THIRD BOX</h2>
+  </div>
+  <script>
+      const form = document.getElementById("create-form");
+      const box2 = document.getElementById("box2");
+      form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const name = document.getElementById("name").value;
+          box2.textContent = ">" + name;
+      });
+  </script>
  
 </body>
 </main>
