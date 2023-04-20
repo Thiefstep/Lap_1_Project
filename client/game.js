@@ -143,3 +143,27 @@ function displayQuestion() {
 
     createFood();
 }
+
+// Keyboard controls
+document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowUp" || event.key === "w") {
+        if (direction.y === 0) {
+            direction = { x: 0, y: -20 };
+        }
+    } else if (event.key === "ArrowDown" || event.key === "s") {
+        if (direction.y === 0) {
+            direction = { x: 0, y: 20 };
+        }
+    } else if (event.key === "ArrowLeft" || event.key === "a") {
+        if (direction.x === 0) {
+            direction = { x: -20, y: 0};
+        }
+    } else if (event.key === "ArrowRight" || event.key === "d") {
+            if (direction.x === 0) {
+                direction = { x: 20, y: 0 };
+        }
+    }
+});
+
+    // Start the game
+    init(); 
