@@ -1,16 +1,15 @@
+const express = require('express');
+const cors = require('cors');
+const questions = require('./questions.json')
 const logger = require("./logger");
-const express = require("express");
-const cors = require("cors");
-
-let facts = require("./facts") 
 
 const app = express();
-
-app.use(express.json())
 app.use(cors());
+app.use(express.json())
+
 app.use(logger);
 
-
+let facts = require("./facts") 
 
 app.get("/", (req, res) => {
     res.send(`Welcome to the facts API! There are ${facts.length} available.`);
