@@ -115,3 +115,31 @@ function updateScore() {
         highscore = score;
     }
 }
+
+function displayQuestion() {
+    let randomIndex = Math.floor(Math.random() * questions.length);
+    let question = questions[randomIndex];
+    let correctColor, incorrectColor;
+
+    do {
+        randomIndex = Math.floor(Math.random() * questions.length);
+        question = questions[randomIndex];
+        correctColor = Math.random() < 0.5 ? "yellow" : "red";
+        incorrectColor = correctColor === "yellow" ? "red" : "yellow";
+    } while (question.correct === question.incorrect);
+
+    questionEl.textContent = question.question;
+
+    if (correctColor === "yellow") {
+        yellowEl.textContent = question.correct;
+        redEl.textContent = question.incorrect;
+    } else {
+        yellowEl.textContent = question.incorrect;
+        redEl.textContent = question.correct;
+    }
+
+    yellowEl.style.color = "yellow";
+    redEl.style.color = "red";
+
+    createFood();
+}
