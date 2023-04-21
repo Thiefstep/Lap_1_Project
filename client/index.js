@@ -1,7 +1,4 @@
-// const randomiseButton = document.querySelector("#btn-randomise");
-
-// randomiseButton.addEventListener("click", displayFact);
-
+// Initiate the fetch request
 async function displayFact() {
     const res = await fetch("http://localhost:3000/facts/random");
     const fact = await res.json();

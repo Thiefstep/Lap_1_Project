@@ -4,7 +4,15 @@
     "test": "jest game.test.js"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "jest": "^29.2.2",
     "jest-each": "^29.2.1"
+=======
+    "jest": "^28.1.3",
+    "jest-each": "^28.1.3"
+  },
+  "dependencies": {
+    "jsdom": "^21.1.1"
+>>>>>>> 7f05891d7ff0b6b1a04d51762d848b396a53e06f
   }
 }

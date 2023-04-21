@@ -31,10 +31,18 @@ nav {
     margin: 20px 0;
 }
 
+#question-container span {
+    font-size: 25px;
+}
+
 #answer-container {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+#answer-container {
+    font-size: 25px;
 }
 
 #gameCanvas {
