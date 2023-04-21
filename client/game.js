@@ -169,4 +169,15 @@ document.addEventListener("keydown", (event) => {
     init(); 
 
      // export all functions to be used in the test file 
-     module.exports = {init, update, checkCollision, drawGame, drawSnake, drawFood, createFood, resetGame, updateScore, displayQuestion};
+     module.exports = {
+        init, 
+        moveSnake, 
+        checkCollision,
+        createFood,
+        drawGame,
+        drawSnake,
+        drawFood,
+        resetGame,
+        updateScore,
+        displayQuestion
+    };
