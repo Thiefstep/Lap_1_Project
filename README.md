@@ -23,7 +23,7 @@ npm install express cors nodemon
 - Open index.js and open the terminal window
 - To start the server
 ```bash
-npm start
+npm run dev
 ```
 - Check server is running by going to `localhost:3000` in browser
 - It should come up with the following: 'Welcome to the questions API! There are ${questions} available.'
